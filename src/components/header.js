@@ -58,8 +58,8 @@ const Header = ({ title }) => {
           {mode}
         </button>
       </Flex>
-      <Helmet>
-      <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,800&display=swap" rel="stylesheet"></link>
+      <Helmet htmlAttributes={{lang: 'en'}}>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,800&display=swap" rel="stylesheet"></link>
       </Helmet>
     </Container>
   )
