@@ -26,15 +26,21 @@ const Header = ({ title }) => {
         alignItems: 'center'
       }}>
         <Styled.a sx={{
-          mx: 3,
+          px: 3,
+          display: 'flex',
+          height: '100%',
+          alignItems: 'center',
           "&:hover": {
-            color: 'text'
+            backgroundColor: '',
           }
         }} as={Link} to='/'>Profile</Styled.a>
         <Styled.a sx={{
-          mx: 3,
+          px: 3,
+          display: 'flex',
+          height: '100%',
+          alignItems: 'center',
           "&:hover": {
-            color: 'text'
+            backgroundColor: 'textHover',
           }
         }} as={Link} to={ARTICLES}>Articles</Styled.a>
         <button sx={{
