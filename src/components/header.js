@@ -31,7 +31,8 @@ const Header = ({ title }) => {
           height: '100%',
           alignItems: 'center',
           "&:hover": {
-            backgroundColor: '',
+            backgroundColor: 'headerHoverContainer',
+            color: 'headerHoverText'
           }
         }} as={Link} to='/'>Profile</Styled.a>
         <Styled.a sx={{
@@ -40,9 +41,13 @@ const Header = ({ title }) => {
           height: '100%',
           alignItems: 'center',
           "&:hover": {
-            backgroundColor: 'textHover',
+            backgroundColor: 'headerHoverContainer',
+            color: 'headerHoverText'
           }
-        }} as={Link} to={ARTICLES}>Articles</Styled.a>
+        }} as={Link} activeStyle={{
+          backgroundColor: 'headerActiveContainer',
+          color: 'headerHoverText'
+        }} to={ARTICLES}>Articles</Styled.a>
         <button sx={{
           variant: 'buttons.secondary',
           mx: 5,

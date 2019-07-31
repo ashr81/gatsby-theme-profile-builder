@@ -12,8 +12,11 @@ export default {
   colors: {
     text: '#000',
     textHover: '#3a3434',
-    background: '#fff',
     primary: '#07c',
+    headerHoverContainer: '#4f91bf',
+    headerHoverText: 'text',
+    headerActiveContainer: '#3e9de0',
+    background: '#fff',
     secondary: '#05a',
     muted: '#f6f6f6f',
     light: '#f4f4f4',
@@ -21,6 +24,9 @@ export default {
     modes: {
       dark: {
         text: '#fff',
+        headerHoverContainer: '#07c',
+        headerHoverText: 'text',
+        headerActiveContainer: '#3b9ade',
         textHover: '#ded8d8',
         background: '#171616',
         primary: '#0cf',
