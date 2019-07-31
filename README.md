@@ -39,7 +39,9 @@ To use this theme in your Gatsby sites, follow these instructions:
     }
 
     ```
-    siteMetadata is required to build your profile to showcase.
+    siteMetadata is required to build your profile to showcase.    
+    `CONTENTFUL_SPACE_ID` and `CONTENTFUL_ACCESS_TOKEN` are the environment variables for your spaceId and access token for you contentful CMS account:
+    You can signup for one [here](https://be.contentful.com/login)
 3. Add in yml file with all your experience data to build profile UI using it:
     File should be outside `src` folder
     Example: `data/timelines.yml`
