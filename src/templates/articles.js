@@ -3,7 +3,7 @@
 import React from 'react';
 import { Layout, Head } from '../components';
 import { Styled, jsx } from "theme-ui"
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import { ARTICLES } from '../baseRoutes';
 
 const Articles = () => {
@@ -33,7 +33,7 @@ const Articles = () => {
         <Styled.ol>
           {data.map((i) => (
             <Styled.li key={i.node.id}>
-              <Styled.a to={`${ARTICLES}/${i.node.slug}`}>
+              <Styled.a as={Link} to={`${ARTICLES}/${i.node.slug}`}>
                 <Styled.h3 sx={{
                   my: 2
                 }}>{i.node.title}</Styled.h3>
