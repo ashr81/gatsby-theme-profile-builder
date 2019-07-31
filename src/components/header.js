@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet';
 import { ARTICLES } from "../baseRoutes";
 
-const Header = ({ title }) => {
+const Header = ({ title, description }) => {
   const [mode, setMode] = useColorMode()
   const toggleMode = e => {
     setMode(mode === 'dark' ? 'light' : 'dark')
@@ -58,7 +58,12 @@ const Header = ({ title }) => {
           {mode}
         </button>
       </Flex>
-      <Helmet htmlAttributes={{lang: 'en'}}>
+      <Helmet htmlAttributes={{lang: 'en'}} meta={[
+        {
+          name: 'description',
+          content: description
+        }
+      ]}>
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,800&display=swap" rel="preconnect" as="style"></link>
       </Helmet>
     </Container>

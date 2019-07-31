@@ -14,6 +14,7 @@ const Layout = ({ children }) => {
           author {
             name
           }
+          description
         }
       }
     }
@@ -32,7 +33,7 @@ const Layout = ({ children }) => {
           })}
         />
       <StyledLayout>
-        <Header title={data.site.siteMetadata.title}/>
+        <Header title={data.site.siteMetadata.title} description={data.site.siteMetadata.description}/>
         <Main>
           <Container>{children}</Container>
         </Main>
