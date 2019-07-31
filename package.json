@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/ashr81/gatsby-theme-profile-builder.git"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
@@ -31,6 +31,7 @@
     "gatsby-transformer-remark": "^2.6.10",
     "gatsby-transformer-yaml": "^2.2.4",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
     "theme-ui": "^0.2.23"
   },
   "keywords": [
