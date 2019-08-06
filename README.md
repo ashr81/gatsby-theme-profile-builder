@@ -2,7 +2,7 @@
 
 This is theme which generates site to show case your work profile and your contentful CMS blog articles directly with zero coding, required only few configuration mentioned below.
 
-See the [live demo](https://frosty-payne-d3021b.netlify.com/)
+See the [live demo](https://gatsby-theme-profile-builder.netlify.com/)
 
 ## Installation
 
