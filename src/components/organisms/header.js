@@ -3,7 +3,7 @@ import React from "react"
 import { Header as Container, Flex, Styled, jsx } from "theme-ui"
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet';
-import { ARTICLES } from "../baseRoutes";
+import { ARTICLES } from "../../baseRoutes";
 
 const Header = ({ title, description }) => {
   return (

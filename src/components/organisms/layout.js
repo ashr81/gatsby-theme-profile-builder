@@ -3,8 +3,8 @@ import React from "react"
 import { Global } from "@emotion/core"
 import { Layout as StyledLayout, Main, Container, useColorMode, jsx, css } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby";
-import { Footer, Header } from ".";
-import { Button } from './atoms';
+import { Footer, Header } from "..";
+import { Button } from '../atoms';
 
 const Layout = ({ children }) => {
   const [mode, setMode] = useColorMode()
@@ -45,9 +45,14 @@ const Layout = ({ children }) => {
             title="Toggle Dark Mode"
             onClick={toggleMode}
             sx={{
-              position: 'absolute',
+              position: 'relative',
               right: 0,
-              m: 4
+              m: [2, 4],
+              right: 3,
+              p: 2,
+              border: 0,
+              borderRadius: 3,
+              variant: 'buttons.secondary'
             }}
           >
             {mode && mode.split('').reduce((acc, cur, index) => index === 0 ? acc + cur.toUpperCase() : acc + cur, '')} Mode

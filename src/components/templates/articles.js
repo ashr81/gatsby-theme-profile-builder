@@ -1,10 +1,11 @@
 
 /** @jsx jsx */
 import React from 'react';
-import { Layout, Head } from '../components';
+import { Head } from '../molecules';
+import { Layout } from '../organisms';
 import { Styled, jsx } from "theme-ui"
 import { graphql, useStaticQuery, Link } from 'gatsby';
-import { ARTICLES } from '../baseRoutes';
+import { ARTICLES } from '../../baseRoutes';
 
 const Articles = () => {
   const { 

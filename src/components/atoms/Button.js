@@ -1,29 +1,14 @@
 /** @jsx jsx */
-import React from "react"
-import { Styled, jsx } from "theme-ui";
+import React from "react";
+import styled from '@emotion/styled';
+import { jsx } from "theme-ui";
 
-const Button = ({
-  variant = 'primary',
-  children,
-  ...props
-}) => (
-<button
-  {...props}
-  sx={{
-    appearance: 'none',
-    display: 'inline-block',
-    textAlign: 'center',
-    fontSize: 'inherit',
-    m: 0,
-    px: 3,
-    py: 2,
-    border: 0,
-    borderRadius: 4,
-    variant: `buttons.${variant}`
-  }}
->
-{children}
-</button>)
+const Button = styled.button`
+  appearance: none;
+  display: inline-block;
+  text-align: center;
+  font-size: inherit;
+`
 
 export default Button;
 
