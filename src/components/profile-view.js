@@ -26,8 +26,8 @@ const ProfileView = ({ name, github, twitter, image_url }) => {
       width: '100%',
       justifyContent: 'space-around'
     }}>
-      {github ? <Styled.a href={github}><FaGithub size={30}/></Styled.a> : null}
-      {twitter? <Styled.a href={twitter}><FaTwitter size={30}/></Styled.a> : null }
+      {github ? <Styled.a href={github} target='_blank'><FaGithub size={30}/></Styled.a> : null}
+      {twitter? <Styled.a href={twitter} target='_blank'><FaTwitter size={30}/></Styled.a> : null }
     </Flex>
   </Flex>)
 }

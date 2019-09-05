@@ -125,7 +125,7 @@ export default {
   },
   buttons: {
     primary: {
-      color: 'white',
+      color: 'primary',
       bg: 'text',
       cursor: 'pointer'
     },
