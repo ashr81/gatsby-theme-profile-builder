@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/ashr81/gatsby-theme-profile-builder.git"
   },
-  "version": "1.0.13",
+  "version": "1.0.14",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
