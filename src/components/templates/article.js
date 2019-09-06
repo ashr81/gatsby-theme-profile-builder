@@ -1,5 +1,6 @@
 import React from 'react';
-import { Layout, Head } from '../components';
+import { Head } from '../molecules';
+import { Layout } from '../organisms';
 import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 

@@ -5,35 +5,35 @@
     "type": "git",
     "url": "https://github.com/ashr81/gatsby-theme-profile-builder.git"
   },
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": "^2.13.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "gatsby": "^2.15.9",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "gatsby": "^2.13.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "gatsby": "^2.15.9",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "dependencies": {
-    "@contentful/rich-text-react-renderer": "^13.2.0",
-    "@emotion/core": "^10.0.14",
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@emotion/core": "^10.0.17",
     "@emotion/styled": "^10.0.17",
-    "@mdx-js/react": "^1.0.21",
-    "gatsby-plugin-sharp": "^2.2.9",
-    "gatsby-plugin-theme-ui": "^0.2.2",
-    "gatsby-remark-images": "^3.1.7",
-    "gatsby-remark-relative-images": "^0.2.2",
-    "gatsby-source-contentful": "^2.1.16",
-    "gatsby-source-filesystem": "^2.1.6",
-    "gatsby-transformer-remark": "^2.6.10",
-    "gatsby-transformer-yaml": "^2.2.4",
+    "@mdx-js/react": "^1.4.4",
+    "gatsby-plugin-sharp": "^2.2.20",
+    "gatsby-plugin-theme-ui": "^0.2.41",
+    "gatsby-remark-images": "^3.1.20",
+    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-source-contentful": "^2.1.33",
+    "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-transformer-remark": "^2.6.21",
+    "gatsby-transformer-yaml": "^2.2.8",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
-    "theme-ui": "^0.2.23"
+    "theme-ui": "^0.2.41"
   },
   "keywords": [
     "gatsby",

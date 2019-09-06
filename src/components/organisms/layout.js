@@ -3,7 +3,7 @@ import React from "react"
 import { Global } from "@emotion/core"
 import { Layout as StyledLayout, Main, Container, useColorMode, jsx, css } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby";
-import { Footer, Header } from "..";
+import { Footer, Header } from ".";
 import { Button } from '../atoms';
 
 const Layout = ({ children }) => {

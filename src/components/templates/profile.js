@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import React from "react";
-import { graphql, useStaticQuery } from 'gatsby'
-import { Layout, Head, TimelineList, ProfileView } from "../components";
+import { graphql, useStaticQuery } from 'gatsby';
+import { Head } from "../molecules";
+import { Layout, TimelineList, ProfileView } from "../organisms";
 import { Styled, jsx, Flex } from 'theme-ui';
 
 const ProfileTemplate = () => {
