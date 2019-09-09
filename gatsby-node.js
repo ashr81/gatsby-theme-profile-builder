@@ -39,14 +39,14 @@ exports.createPages = async ({ actions, graphql }, { basePath = "/" }) => {
   const { createPage } = actions
   createPage({
     path: basePath,
-    component: require.resolve("./src/components/templates/profile.js")
+    component: require.resolve("./src/pages/profile.js")
   })
   const articlesPath = basePath.lastIndexOf("/") !== basePath.length - 1 ? `${basePath}/articles` : `${basePath}articles`;
   createPage({
     path: articlesPath,
-    component: require.resolve("./src/components/templates/articles.js")
+    component: require.resolve("./src/pages/articles.js")
   })
-  const articleComponent = require.resolve('./src/components/templates/article.js')
+  const articleComponent = require.resolve('./src/pages/article.js')
   const res = await graphql(`
     query {
       allContentfulBlogPost {
