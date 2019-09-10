@@ -49,9 +49,6 @@ export default {
     text: "1.45",
     heading: "1.1",
   },
-  sizes: {
-    container: 650,
-  },
   styles: {
     Layout: {
       backgroundColor: "background",
@@ -71,11 +68,6 @@ export default {
         maxWidth: "container",
         padding: 3,
       },
-    },
-    Main: {
-      margin: "0 auto",
-      maxWidth: "container",
-      width: "90vw",
     },
     Container: {
       padding: 0,

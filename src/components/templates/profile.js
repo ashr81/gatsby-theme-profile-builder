@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import React from "react";
 import { Head } from "../molecules";
-import { Layout, TimelineList, ProfileView } from "../organisms";
+import { Layout, TimelineList, ProfileView, WelcomeTiles } from "../organisms";
 import { Styled, jsx, Flex } from 'theme-ui';
 
 const Profile = ({ timelines, author }) => {
   return (
     <Layout>
+      <WelcomeTiles />
       <Head title='Profile'/>
       <ProfileView {...author}/>
       <Flex sx={{

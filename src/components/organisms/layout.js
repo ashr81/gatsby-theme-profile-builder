@@ -1,16 +1,19 @@
 /** @jsx jsx */
-import React from "react"
+import React, { useEffect } from "react"
 import { Global } from "@emotion/core"
-import { Layout as StyledLayout, Main, Container, useColorMode, jsx, css } from "theme-ui"
+import { Layout as StyledLayout, Main, useColorMode, jsx, css } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby";
 import { Footer, Header } from ".";
-import { Button } from '../atoms';
+import { Button, Container } from '../atoms';
 
 const Layout = ({ children }) => {
   const [mode, setMode] = useColorMode()
   const toggleMode = () => {
     setMode(mode === 'dark' ? 'light' : 'dark')
   }
+  useEffect(() => {
+    window.scroll(0, 60)
+  }, [])
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -45,10 +48,10 @@ const Layout = ({ children }) => {
             title="Toggle Dark Mode"
             onClick={toggleMode}
             sx={{
-              position: 'relative',
+              position: 'absolute',
               right: 0,
-              m: [2, 4],
-              right: 3,
+              top: 0,
+              m: [3, 4],
               p: 2,
               border: 0,
               borderRadius: 3,
