@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { Articles as ArticlesTemplate } from '../components/templates';
+import { Articles as ArticlesTemplate } from '../templates';
 
 const Articles = () => {
   const { 

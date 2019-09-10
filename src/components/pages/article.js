@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby'
-import { Article as ArticleTemplate } from '../components/templates';
+import { Article as ArticleTemplate } from '../templates';
 
 export const query = graphql`
   query($slug: String!) {

@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from 'gatsby';
-import { Profile as ProfileTemplate } from "../components/templates";
+import { Profile as ProfileTemplate } from "../templates";
 
 const Profile = () => {
   const data = useStaticQuery(graphql`
@@ -30,7 +30,6 @@ const Profile = () => {
     }
   `)
   const { allTimeline: { nodes: timelines }, site: { siteMetadata: { author }} } = data;
-
   return (
     <ProfileTemplate
       timelines={timelines}
