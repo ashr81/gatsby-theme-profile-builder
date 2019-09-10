@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React, { useEffect } from "react"
+import React from "react"
 import { Global } from "@emotion/core"
 import { Layout as StyledLayout, Main, useColorMode, jsx, css } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby";
@@ -11,9 +11,7 @@ const Layout = ({ children }) => {
   const toggleMode = () => {
     setMode(mode === 'dark' ? 'light' : 'dark')
   }
-  useEffect(() => {
-    window.scroll(0, 60)
-  }, [])
+
   const data = useStaticQuery(graphql`
     query {
       site {

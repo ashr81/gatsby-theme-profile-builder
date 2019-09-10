@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { graphql, useStaticQuery } from 'gatsby';
 import { Profile as ProfileTemplate } from "../templates";
 
@@ -29,6 +29,9 @@ const Profile = () => {
       }
     }
   `)
+  useEffect(() => {
+    window.scroll(0, 60)
+  }, [])
   const { allTimeline: { nodes: timelines }, site: { siteMetadata: { author }} } = data;
   return (
     <ProfileTemplate
