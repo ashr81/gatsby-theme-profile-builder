@@ -18,7 +18,14 @@ exports.onPreBootstrap = ({ reporter }, options) => {
  */
 exports.sourceNodes = ({ actions }) => {
   actions.createTypes(`
-    type Timeline implements Node @dontInfer {
+    type LayoutYaml implements Node @dontInfer {
+      id: ID!
+      imageUrl: String @proxy(from: "image_url")
+      heading: String!
+      description: String!
+      viewMoreHref: String @proxy(from: "view_more_href")
+    }
+    type TimelineYaml implements Node @dontInfer {
       id: ID!
       name: String!
       role: String!

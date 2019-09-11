@@ -11,7 +11,13 @@ module.exports = ({ contentPath = 'data', basePath='/', contentFulCredentials = 
       {
         resolve: 'gatsby-transformer-yaml',
         options: {
-          typeName: 'Timeline'
+          typeName: ({ node, object, isArray }) => {
+            if (node.name === `timeline`) {
+              return `Timeline`
+            } else {
+              return `Layout`
+            }
+          }
         }
       },
       'gatsby-plugin-sharp',
