@@ -18,14 +18,14 @@ exports.onPreBootstrap = ({ reporter }, options) => {
  */
 exports.sourceNodes = ({ actions }) => {
   actions.createTypes(`
-    type LayoutYaml implements Node @dontInfer {
+    type Layout implements Node @dontInfer {
       id: ID!
       imageUrl: String @proxy(from: "image_url")
       heading: String!
       description: String!
       viewMoreHref: String @proxy(from: "view_more_href")
     }
-    type TimelineYaml implements Node @dontInfer {
+    type Timeline implements Node @dontInfer {
       id: ID!
       name: String!
       role: String!
@@ -34,6 +34,12 @@ exports.sourceNodes = ({ actions }) => {
       url: String!
       techStack: String @proxy(from: "tech_stack")
       description: String!
+    }
+    type Intro implements Node @dontInfer {
+      id: ID!
+      name: String!
+      profileImage: String @proxy(from: "profile_image")
+      shortBio: String! @proxy(from: "short_bio")
     }
   `)
 }

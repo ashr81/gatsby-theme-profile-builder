@@ -14,8 +14,10 @@ module.exports = ({ contentPath = 'data', basePath='/', contentFulCredentials = 
           typeName: ({ node, object, isArray }) => {
             if (node.name === `timeline`) {
               return `Timeline`
-            } else {
+            } else if(node.name === 'layout') {
               return `Layout`
+            } else {
+              return `Intro`
             }
           }
         }

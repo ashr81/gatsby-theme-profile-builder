@@ -3,11 +3,18 @@ import { Flex } from "theme-ui"
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { WelcomeTile } from '../atoms';
+import { excludeMedia, media } from '../../../utils/mediaBreakpoints'
 
 const WelcomeContainer = styled(Flex)`
   position: relative;
-  width: 25%;
-  height: 100%;
+  ${media.mobile`
+    width: 100%;
+    height: 100vh;
+  `}
+  ${excludeMedia.mobile`
+    width: 25%;
+    height: 100%;
+  `}
   background-size: cover;
   background-repeat: no-repeat;
   transform-style: preserve-3d;

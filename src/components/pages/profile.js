@@ -5,7 +5,7 @@ import { Profile as ProfileTemplate } from "../templates";
 const Profile = () => {
   const data = useStaticQuery(graphql`
     query {
-      allTimelineYaml(sort: {fields: startDate, order: ASC}) {
+      allTimeline(sort: {fields: startDate, order: ASC}) {
         nodes {
           id
           name
@@ -16,6 +16,18 @@ const Profile = () => {
           techStack
           url
         }
+      }
+      allLayout {
+        nodes {
+          imageUrl
+          heading
+          description
+        }
+      }
+      intro {
+        profileImage
+        name
+        shortBio
       }
       site {
         siteMetadata {
@@ -32,11 +44,18 @@ const Profile = () => {
   useEffect(() => {
     window.scroll(0, 60)
   }, [])
-  const { allTimelineYaml: { nodes: timelines }, site: { siteMetadata: { author }} } = data;
+  const {
+    allTimeline: { nodes: timelines },
+    allLayout: { nodes: layouts },
+    site: { siteMetadata: { author }},
+    intro
+  } = data;
   return (
     <ProfileTemplate
       timelines={timelines}
       author={author}
+      layouts={layouts}
+      intro={intro}
     />
   )
 }
