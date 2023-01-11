@@ -29,7 +29,7 @@
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-contentful": "^2.1.33",
     "gatsby-source-filesystem": "^2.1.21",
-    "gatsby-transformer-remark": "^2.6.21",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-yaml": "^2.2.8",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
